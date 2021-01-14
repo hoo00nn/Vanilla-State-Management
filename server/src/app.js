@@ -8,6 +8,6 @@ const PORT = 3000;
 
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../../client/src")));
+app.use(express.static(path.join(__dirname, "../../client/dist")));
 
 app.listen(PORT, () => console.log("server start.."));
