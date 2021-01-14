@@ -2,6 +2,7 @@ import InputForm from "./components/input-form.js";
 import List from "./components/list.js";
 import Count from "./components/count.js";
 import Status from "./components/status.js";
+import "./css/styles.css";
 
 class App {
   constructor() {

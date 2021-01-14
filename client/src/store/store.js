@@ -1,4 +1,4 @@
-import PubSub from "../../lib/pubsub.js";
+import PubSub from "../lib/pubsub.js";
 
 export default class Store {
   constructor(params) {
@@ -60,8 +60,6 @@ export default class Store {
     }
 
     this.status = "mutation";
-
-    console.log("dsada");
 
     let newState = this.mutations[mutationKey](this.state, payload);
 
