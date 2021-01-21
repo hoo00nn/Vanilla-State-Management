@@ -19,7 +19,6 @@ export default class Store {
 
     this.state = new Proxy(params.state || {}, {
       set: (state, key, value) => {
-        console.log(state);
         state[key] = value;
 
         console.log(`stateChange: ${key}: ${value}`);
