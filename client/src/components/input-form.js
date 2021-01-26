@@ -14,7 +14,6 @@ export default class InputForm extends Component {
 
   setEvent() {
     this.element.addEventListener("click", (e) => {
-      console.log(e.target);
       if (e.target.id === "add-button") {
         const value = document.querySelector("#item-input").value.trim();
 

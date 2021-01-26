@@ -16,7 +16,6 @@ export default class Status extends Component {
     this.element.addEventListener("click", (e) => {
       if (e.target.classList.contains("status-button")) {
         const { status } = e.target.dataset;
-
         store.dispatch("updateStatus", status);
       }
     });
